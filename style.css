@@ -8,7 +8,7 @@
 
   /* Color Variables */
   --50: #f8fafc;
-  --100: #f1f5f9;
+  --primary-light: #f1f5f9;
   --200: #e2e8f0;
   --300: #cbd5e1;
   --400: #94a3b8;
@@ -17,6 +17,14 @@
   --700: #334155;
   --800: #1e293b;
   --900: #0f172a;
+
+  --orange: #f07e37;
+  --pink: #ff43ba;
+  --blue: #009ac5;
+  --primary-dark: #2a2d30;
+  --secondary-dark: #494e54;
+  --secondary-light: #7c848f;
+  --primary-light: #e7f0fd;
   /* --50: #ecfeff;
   --100: #cffafe;
   --200: #a5f3fc;
@@ -62,11 +70,11 @@ input {
 /* Coloring */
 
 body {
-  background-color: var(--300);
+  background-color: var(--primary-light);
 }
 
 .sidebar {
-  background-color: var(--900);
+  background-color: var(--blue);
 }
 
 .sidebar > *,
@@ -75,32 +83,36 @@ body {
 }
 
 header {
-  background-color: var(--100);
+  background-color: var(--primary-light);
   /* box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5); */
   box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card {
-  background-color: var(--100);
+  background-color: var(--primary-light);
 }
+
 h4,
 h6,
 div,
-.card-icons > svg,
 p {
-  color: var(--900);
+  color: var(--primary-dark);
+}
+
+.card-icons > svg {
+  color: var(--orange);
 }
 
 .main-side-card {
-  background-color: var(--100);
+  background-color: var(--primary-light);
 }
 
 .account-section > * {
-  color: var(--900);
+  color: var(--primary-dark);
 }
 
 .search-section > * {
-  color: var(--900);
+  color: var(--blue);
 }
 
 /* Hidden  */
@@ -199,7 +211,7 @@ h4 {
 .card {
   min-height: 130px;
   border-radius: 0.5rem;
-  border-left: 0.5rem solid var(--900);
+  border-left: 0.5rem solid var(--secondary-light);
   padding: 1rem;
   display: grid;
   /* align-content: start; */
@@ -230,7 +242,7 @@ h4 {
 
 .card-icons > svg:hover {
   cursor: pointer;
-  opacity: 0.7;
+  color: var(--secondary-light);
 }
 
 .main-side {
@@ -333,7 +345,7 @@ header {
 .search-bar {
   flex: 1;
   border-radius: 1rem;
-  background-color: var(--100);
+  background-color: var(--primary-light);
   box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
   /* box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.5) inset; */
   padding: 0 1rem;
@@ -415,14 +427,14 @@ button {
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
-  background-color: var(--700);
-  color: var(--100);
+  background-color: var(--blue);
+  color: var(--primary-light);
   font-size: 0.8rem;
   font-weight: 700;
 }
 
 button:hover {
-  background-color: var(--800);
+  background-color: var(--orange);
   cursor: pointer;
 }
 
