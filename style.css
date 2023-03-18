@@ -67,13 +67,11 @@ header {
 .card {
   background-color: var(--100);
 }
-
-.card-icons > svg {
-  color: var(--900);
-}
-
 h4,
-h6 {
+h6,
+div,
+.card-icons > svg,
+p {
   color: var(--900);
 }
 
@@ -184,7 +182,7 @@ h4 {
 }
 
 .card-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
@@ -215,4 +213,22 @@ h4 {
 .main-side-card {
   flex: 1;
   border-radius: 0.5rem;
+  padding: 2rem;
+  display: grid;
+}
+
+.side-card-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.side-card-text {
+  font-size: .7rem;
+  font-weight: 300;
+}
+
+.line {
+  border-bottom: 1px solid var(--300);
+  padding-bottom: .6rem;
+  margin-bottom: .6rem;
 }
