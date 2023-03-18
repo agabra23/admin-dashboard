@@ -76,7 +76,8 @@ body {
 
 header {
   background-color: var(--100);
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -203,6 +204,7 @@ h4 {
   display: grid;
   /* align-content: start; */
   gap: 10px;
+  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
@@ -228,7 +230,7 @@ h4 {
 
 .card-icons > svg:hover {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .main-side {
@@ -249,6 +251,7 @@ h4 {
   border-radius: 0.5rem;
   padding: 2rem;
   display: grid;
+  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .side-card-title {
@@ -313,7 +316,7 @@ header {
 
 .header > div > svg:hover {
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .header > div > .profile-picture {
@@ -330,8 +333,9 @@ header {
 .search-bar {
   flex: 1;
   border-radius: 1rem;
-  background-color: var(--300);
-  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.5) inset;
+  background-color: var(--100);
+  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.5) inset; */
   padding: 0 1rem;
   height: 2rem;
   border: none;
@@ -339,9 +343,9 @@ header {
 
 input[type="search"]:focus {
   outline: none;
-  border: 2px solid var(--400);
+  border: 2px solid var(--300);
   color: var(--900);
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -350,14 +354,15 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 1.1em;
   width: 1.1em;
   border-radius: 50em;
-  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
   background-size: contain;
   opacity: 0;
   pointer-events: none;
 }
 
 input[type="search"]:focus::-webkit-search-cancel-button {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: all;
 }
 
@@ -369,6 +374,7 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 
 .account-name {
   font-size: 1.1rem;
+  margin-right: 2rem;
 }
 
 nav {
@@ -422,5 +428,5 @@ button:hover {
 
 .hover:hover {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
