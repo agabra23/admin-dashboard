@@ -22,7 +22,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html {
@@ -223,12 +223,40 @@ h4 {
 }
 
 .side-card-text {
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 
 .line {
   border-bottom: 1px solid var(--300);
-  padding-bottom: .6rem;
-  margin-bottom: .6rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.social-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  align-items: center;
+}
+
+.social-card > svg {
+  width: 50%;
+}
+
+.social-card > div {
+  display: grid;
+}
+
+.social-card > div > p {
+  font-size: 0.6rem;
+}
+
+.username {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.user-description {
+  font-weight: 300;
 }
