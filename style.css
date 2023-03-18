@@ -22,7 +22,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html {
@@ -259,4 +259,8 @@ h4 {
 
 .user-description {
   font-weight: 300;
+}
+
+header {
+  
 }
