@@ -211,7 +211,7 @@ h4 {
 .card {
   min-height: 130px;
   border-radius: 0.5rem;
-  border-left: 0.5rem solid var(--secondary-light);
+  border-left: 0.5rem solid var(--orange);
   padding: 1rem;
   display: grid;
   /* align-content: start; */
@@ -220,7 +220,7 @@ h4 {
 }
 
 .card-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
